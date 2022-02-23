@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caravan</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./assets/dependencies/bootstrap/css/bootstrap.min.css">
+  <!-- Main style -->
+  <link rel="stylesheet" href="./assets/main/css/main.css">
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Menu -->
+  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light box-shadow">
+    <div class="container-fluid p-2">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/caravan.svg" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown me-md-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Locais
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./california.html">California</a></li>
+              <li><a class="dropdown-item" href="./paris.html">Paris</a></li>
+              <li><a class="dropdown-item" href="./dublin.html">Dublin</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-md-2">
+            <a class="nav-link active" aria-current="page" href="./planos.html">Planos</a>
+          </li>
+          <li class="nav-item me-md-2">
+            <a class="nav-link" href="./contato.html">Contato</a>
+          </li>
+          <li class="nav-item me-md-2 position-relative">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#login" href="#">Login</a>
+          </li>
+          <a style="max-width: 115px;" href="./inscricao.html" class="btn btn-outline-primary">
+            Inscreva-se
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal LOGIN -->
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-content rounded-5 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h2 class="fw-bold mb-0">Sign up for free</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
+              <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+              <hr class="my-4">
+              <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+              <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+                <i class="fa-brands fa-twitter"></i> Sign up with Twitter
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <i class="fa-brands fa-facebook-f"></i> Sign up with Facebook
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#github"></use>
+                </svg>
+                <i class="fa-brands fa-github"></i> Sign up with GitHub
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main Header -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-7 p-0">
+        <!-- Carrosel -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/california.jpg" class="d-block w-100" alt="California" data-bs-interval="10000">
+              <div class="carousel-caption d-none d-md-block">
+                <span class="display-5">California</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/paris.jpg" class="d-block w-100" alt="Paris" data-bs-interval="10000">
+              <div class="carousel-caption d-none d-md-block">
+                <span class="display-5">Paris</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/dublin.jpg" class="d-block w-100" alt="Dublin" data-bs-interval="10000">
+              <div class="carousel-caption d-none d-md-block">
+                <span class="display-5">Dublin</span>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-5 p-0 bg-dark text-white d-flex flex-column justify-content-center">
+        <header class="p-lg-4 p-2">
+          <h1 class="display-5">
+            Realize a viagem do seu sonho
+          </h1>
+          <p class="lead">
+            O melhor local para viajar é com a Caravan, mais de 5.000 excursões concluídas.
+          </p>
+          <div class="input-group mb-3 text-wrap">
+            <input type="text" class="form-control" placeholder="Digite seu email" aria-label="Recipient's Email"
+              aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2">Inscreva-se</button>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+  <!-- vantagens -->
+  <section class="my-5 text-center">
+    <div class="container">
+      <!-- Vantagens Header -->
+      <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <p class="lead text-uppercase">Tudo de melhor pra você</p>
+          <h1 class="display-4 text-primary">Aproveite as vantagens</h1>
+        </div>
+      </header>
+      <div class="row my-5">
+        <div class="col-sm-6 col-md-4">
+          <img src="./assets/img/icones/passaporte.svg" alt="Passaporte">
+          <h3>
+            Documentos
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="./assets/img/icones/passagens.svg" alt="Passaporte">
+          <h3>
+            Passagens
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="./assets/img/icones/translado.svg" alt="Passaporte">
+          <h3>
+            Translado
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="./assets/img/icones/praias.svg" alt="Passaporte">
+          <h3>
+            Praias
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="./assets/img/icones/bagagens.svg" alt="Passaporte">
+          <h3>
+            Bagagem
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.
+          </p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="./assets/img/icones/turismo.svg" alt="Passaporte">
+          <h3>
+            Turismo
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nemo nulla.
+          </p>
+        </div>
+        <nav>
+          <a href="./planos.html" class="btn btn-primary btn-lg mt-4">Comprar Plano</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <!-- Blockquote -->
+  <section class="bg-quote p-2 p-md-5">
+    <figure class="text-center p-2 p-md-5 m-0">
+      <blockquote class="text-white display-5">
+        <p>
+          <em>
+            "A <u>felicidade</u> não está na estrada que leva a algum lugar. A felicidade é a própria <u>estrada</u>."
+          </em>
+        </p>
+      </blockquote>
+      <figcaption class="blockquote-footer mt-2 text-white">
+        <cite title="Author">Bob Dylan</cite>
+      </figcaption>
+    </figure>
+  </section>
+  <!-- Perguntas Frequentes -->
+  <section class="sec-perguntas">
+    <div class="container">
+      <header class="text-center my-5">
+        <span class="text-uppercase h6">
+          Ainda está com duvidas?
+        </span>
+        <h2 class="display-4 text-primary">
+          Perguntas Frequentes
+        </h2>
+      </header>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-7">
+          <div class="accordion accordion-flush" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button h4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  É possível cancelar a viagem?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0">
+                  <p class="lead">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                    when
+                    the
+                    user activates the relevant trigger.
+                  </p>
+                  <div class="bg-primary mt-4" style="height: 4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed h4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Qual a garantia que tenho se perder o voo?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0">
+                  <p class="lead">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                    when the
+                    user activates the relevant trigger.
+                  </p>
+                  <div class="bg-primary mt-4" style="height: 4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTree">
+                <button class="accordion-button collapsed h4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+                  Qual a principal forma de viagem?
+                </button>
+              </h2>
+              <div id="collapseTree" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0">
+                  <p class="lead">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                    when the
+                    user activates the relevant trigger.
+                  </p>
+                  <div class="bg-primary mt-4" style="height: 4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFor">
+                <button class="accordion-button collapsed h4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Qual o melhor destino de viagem?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0">
+                  <p class="lead">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                    when the
+                    user activates the relevant trigger.
+                  </p>
+                  <div class="bg-primary mt-4" style="height: 4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed h4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Qual o melhor destino de viagem?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0">
+                  <p class="lead">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                    when the
+                    user activates the relevant trigger.
+                  </p>
+                  <div class="bg-primary mt-4" style="height: 4px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center my-4">
+          <span class="small d-block text-uppercase my-2">Fale conosco para mais dúvias</span>
+          <a href="./contato.html" class="btn btn-primary btn-lg">Entre em Contato</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div class="container py-2 py-md-5">
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Paginas
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <a href="./planos.html" class="link">
+                Planos
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./contato.html" class="link">
+                Contato
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./inscricao.html" class="link">
+                Inscreva-se
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Locais
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <a href="./california.html" class="link">
+                California
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./paris.html" class="link">
+                Paris
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./dublin.html" class="link">
+                Dublin
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Contato
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <p class="text-secondary m-0">
+                New York, Westbury | 2645 Gnatty Creek Road
+              </p>
+            </li>
+            <li class="my-1">
+              <p class="text-secondary m-0">
+                caravan@caravan.com.br
+              </p>
+            </li>
+            <li class="my-1">
+              <p class="text-secondary m-0">
+                21 99999-9999
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Redes Sociais
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <a href="#" style="max-width: 180px;" class="btn btn-outline-secondary d-block">
+                Facebook
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="#" style="max-width: 180px;" class="btn btn-outline-secondary d-block">
+                Twitter
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="#" style="max-width: 180px;" class="btn btn-outline-secondary d-block">
+                Youtube
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3 text-white">
+      <p class="m-0">
+        Caravan &copy; 2020. Alguns direitos reservados.
+      </p>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="./assets/dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./assets/dependencies/popper/popper.min.js"></script>
+  <script src="./assets/main/js/main.js"></script>
+</body>
+
+</html>

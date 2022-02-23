@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscreve-se</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./assets/dependencies/bootstrap/css/bootstrap.min.css">
+  <!-- Main style -->
+  <link rel="stylesheet" href="./assets/main/css/main.css">
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light box-shadow">
+    <div class="container-fluid p-2">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/caravan.svg" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown me-md-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Locais
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./california.html">California</a></li>
+              <li><a class="dropdown-item" href="./paris.html">Paris</a></li>
+              <li><a class="dropdown-item" href="./dublin.html">Dublin</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-md-2">
+            <a class="nav-link active" aria-current="page" href="./planos.html">Planos</a>
+          </li>
+          <li class="nav-item me-md-2">
+            <a class="nav-link" href="./contato.html">Contato</a>
+          </li>
+          <li class="nav-item me-md-2">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#login" href="#">Login</a>
+            <!-- Modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-content rounded-5 shadow">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                      <!-- <h5 class="modal-title">Modal title</h5> -->
+                      <h2 class="fw-bold mb-0">Sign up for free</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-5 pt-0">
+                      <form class="">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control rounded-4" id="floatingInput"
+                            placeholder="name@example.com">
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control rounded-4" id="floatingPassword"
+                            placeholder="Password">
+                          <label for="floatingPassword">Password</label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
+                        <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                        <hr class="my-4">
+                        <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                          <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#twitter"></use>
+                          </svg>
+                          <i class="fa-brands fa-twitter"></i> Sign up with Twitter
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                          <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#facebook"></use>
+                          </svg>
+                          <i class="fa-brands fa-facebook-f"></i> Sign up with Facebook
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+                          <svg class="bi me-1" width="16" height="16">
+                            <use xlink:href="#github"></use>
+                          </svg>
+                          <i class="fa-brands fa-github"></i> Sign up with GitHub
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <a style="max-width: 115px;" href="./inscrisao.html" class="btn btn-outline-primary">
+            Inscreva-se
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <header>
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <p class="lead text-uppercase">Programe a viagem dos seus sonhos</p>
+        <h1 class="display-4 text-primary text-uppercase">Inscreva-se</h1>
+      </div>
+    </header>
+    <div class="container my-4">
+      <div class="row justify-content-md-between">
+        <div class="col-md-6">
+          <div class="row my-2">
+            <div class="col-md">
+              <label for="nome" class="form-label">
+                Nome
+              </label>
+              <input type="text" placeholder="Nome completo" class="form-control" id="nome">
+            </div>
+            <div class="col-md">
+              <label for="cpf" class="form-label">
+                CPF
+              </label>
+              <input type="text" maxlength="11" placeholder="xxx.xxx.xxx-xx" class="form-control" id="cpf">
+            </div>
+          </div>
+          <div class="row my-2">
+            <div class="col-md">
+              <label for="email" class="form-label">
+                Email
+              </label>
+              <input type="email" placeholder="Seu email..." class="form-control" id="email">
+            </div>
+            <div class="col-md">
+              <label for="senha" class="form-label">
+                Senha
+              </label>
+              <input type="password" placeholder="Senha de acesso" class="form-control" id="senha">
+            </div>
+          </div>
+          <div class="col-md my-2">
+            <label for="endereco" class="form-label">
+              Endereço
+            </label>
+            <input type="email" placeholder="Numero, nome da rua e bairro" class="form-control" id="endereco">
+          </div>
+          <div class="row my-2">
+            <div class="col-md-6">
+              <label for="cidade" class="form-label">
+                Cidade
+              </label>
+              <input type="email" class="form-control" id="Cidade">
+            </div>
+            <div class="col-md-3">
+              <label for="estado" class="form-label">
+                Estado
+              </label>
+              <select class="form-control form-select" id="estado" aria-label=".form-select-sm example">
+                <option selected>Selecione</option>
+                <option value="1">Pernambuco</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Rio de Janeiro</option>
+                <option value="4">Santa Catarina</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="cep" class="form-label">
+                Cep
+              </label>
+              <input type="text" placeholder="xxxxx-xxx" class="form-control" id="cep">
+            </div>
+          </div>
+          <div class="bg-light box-shadow rounded p-4 mb-2">
+            <h2 class="h5 text-primary">
+              Forma de pagamento
+            </h2>
+            <div>
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="cartao-tab" data-bs-toggle="tab" data-bs-target="#cartao"
+                    type="button" role="tab" aria-controls="cartao" aria-selected="true">Cartão</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="boleto-tab" data-bs-toggle="tab" data-bs-target="#boleto" type="button"
+                    role="tab" aria-controls="boleto" aria-selected="false">Boleto</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="cartao" role="tabpanel" aria-labelledby="cartao-tab">
+                  <div class="container px-0 my-2">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="nome-cartao" class="form-label">
+                          Nome no Cartão
+                        </label>
+                        <input type="text" placeholder="Nome impresso no cartão" class="form-control" id="nome-cartao">
+                      </div>
+                      <div class="col-md-3">
+                        <label for="cartao-mes" class="form-label">
+                          Mês
+                        </label>
+                        <select class="form-control form-select" id="cartao-mes" aria-label="form-select-sm example">
+                          <option selected>Expira mês</option>
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="4">04</option>
+                          <option value="5">05</option>
+                        </select>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="cartao-ano" class="form-label">
+                          Ano
+                        </label>
+                        <select class="form-control form-select" id="cartao-ano"
+                          aria-label="size 3 form-select-sm example">
+                          <option selected>Expira ano</option>
+                          <option value="1">2022</option>
+                          <option value="2">2023</option>
+                          <option value="3">2024</option>
+                          <option value="4">2025</option>
+                          <option value="5">2026</option>
+                          <option value="6">2027</option>
+                          <option value="6">2028</option>
+                          <option value="7">2029</option>
+                          <option value="8">2030</option>
+                        </select>
+                      </div>
+                      <div class="row mt-2">
+                        <div class="col-md">
+                          <label for="cartao-numero" class="form-label">
+                            Número do cartão
+                          </label>
+                          <input type="text" placeholder="5555 5555 5555 5555" class="form-control" id="cartao-numero">
+                        </div>
+                        <div class="col-md">
+                          <label for="cartao-codigo" class="form-label">
+                            Codigo
+                          </label>
+                          <input type="text" placeholder="xxx" class="form-control" id="cartao-codigo">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="boleto" role="tabpanel" aria-labelledby="boleto-tab">
+                  <p class="lead">
+                    Clique em contratar plano que enviaremos um boleto para o seu e-mail.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h2 class="h5 text-primary text-uppercase py-2">
+            Plano Escolhido
+          </h2>
+          <!-- Swith Item Link -->
+          <ul class="nav nav-pills" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="gold-tab" data-bs-toggle="tab" data-bs-target="#gold" type="button"
+                role="tab" aria-controls="gold" aria-selected="true">Gold</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pro-tab" data-bs-toggle="tab" data-bs-target="#pro" type="button" role="tab"
+                aria-controls="pro" aria-selected="false">Pro</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="platinum-tab" data-bs-toggle="tab" data-bs-target="#platinum" type="button"
+                role="tab" aria-controls="platinum" aria-selected="false">Platinum</button>
+            </li>
+          </ul>
+          <!-- Swith Body -->
+          <div class="tab-content" id="myTabContent">
+            <!-- Card 1 -->
+            <div class="tab-pane fade show active" id="gold" role="tabpanel" aria-labelledby="gold-tab">
+              <div class="card my-3 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Gold</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">R$ 5.000<small class="text-muted fw-light">/12x</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 dias de viagem</li>
+                    <li>3 destinos diferentes</li>
+                    <li>Tudo pago pela empresa</li>
+                  </ul>
+                  <form class="mb-3">
+                    <div class="form-group">
+                      <select class="form-control bg-light" id="inputCidadesGold">
+                        <option>Selecione a cidade</option>
+                        <option>California</option>
+                        <option>Paris</option>
+                        <option>Dublin</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="tab-pane fade" id="pro" role="tabpanel" aria-labelledby="pro-tab">
+              <div class="card my-3 rounded-3 shadow-sm">
+                <div class="card-header py-3 bg-dark text-white">
+                  <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">R$ 10.000<small class="text-muted fw-light">/12x</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>45 dias de viagem</li>
+                    <li>5 destinos diferentes</li>
+                    <li>Tudo pago pela empresa</li>
+                    <li>Ingressos para festas</li>
+                    <li>Alimentação inclusa</li>
+                  </ul>
+                  <form class="mb-3">
+                    <div class="form-group">
+                      <select class="form-control bg-light" id="inputCidadesPro">
+                        <option>Selecione a cidade</option>
+                        <option>California</option>
+                        <option>Paris</option>
+                        <option>Dublin</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="platinum" role="tabpanel" aria-labelledby="platinum-tab">
+              <div class="card my-3 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Platinum</h4>
+                </div>
+                <div class="card-body">
+                  <span class="card-title pricing-card-title"><del>R$ 20.000<small
+                        class="text-muted fw-light">/24x</small></del></span>
+                  <h1 class="card-title pricing-card-title">R$ 15.000<small class="text-muted fw-light">/24x</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>75 dias de viagem</li>
+                    <li>8 destinos diferentes</li>
+                    <li>Tudo pago pela empresa</li>
+                    <li>Ingressos para festas</li>
+                    <li>Hoteis 5 estrelas ★</li>
+                    <li>Alimentação inclusa</li>
+                  </ul>
+                  <form class="mb-3">
+                    <div class="form-group">
+                      <select class="form-control bg-light" id="inputCidadesPlatinum">
+                        <option>Selecione a cidade</option>
+                        <option>California</option>
+                        <option>Paris</option>
+                        <option>Dublin</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="termos">
+            <label class="form-check-label" for="termos">
+              Concordo com os <a href="#" class="link-primary">Termos e Condições.</a>
+            </label>
+          </div>
+          <button class="my-2 btn btn-lg btn-primary">Contratar Plano</button>
+        </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div class="container py-2 py-md-5">
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Paginas
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <a href="./planos.html" class="link">
+                Planos
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./contato.html" class="link">
+                Contato
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./inscricao.html" class="link">
+                Inscreva-se
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Locais
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <a href="./california.html" class="link">
+                California
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./paris.html" class="link">
+                Paris
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./dublin.html" class="link">
+                Dublin
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Contato
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <p class="text-secondary m-0">
+                New York, Westbury | 2645 Gnatty Creek Road
+              </p>
+            </li>
+            <li class="my-1">
+              <p class="text-secondary m-0">
+                caravan@caravan.com.br
+              </p>
+            </li>
+            <li class="my-1">
+              <p class="text-secondary m-0">
+                21 99999-9999
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Redes Sociais
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <a href="#" style="max-width: 180px;" class="btn btn-outline-secondary d-block">
+                Facebook
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="#" style="max-width: 180px;" class="btn btn-outline-secondary d-block">
+                Twitter
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="#" style="max-width: 180px;" class="btn btn-outline-secondary d-block">
+                Youtube
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3 text-white">
+      <p class="m-0">
+        Caravan &copy; 2020. Alguns direitos reservados.
+      </p>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="./assets/dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./assets/dependencies/popper/popper.min.js"></script>
+</body>
+
+</html>

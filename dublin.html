@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dublin</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./assets/dependencies/bootstrap/css/bootstrap.min.css">
+  <!-- Main style -->
+  <link rel="stylesheet" href="./assets/main/css/main.css">
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Menu -->
+  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light box-shadow">
+    <div class="container-fluid p-2">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/img/caravan.svg" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown me-md-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Locais
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./california.html">California</a></li>
+              <li><a class="dropdown-item" href="./paris.html">Paris</a></li>
+              <li><a class="dropdown-item" href="./dublin.html">Dublin</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-md-2">
+            <a class="nav-link active" aria-current="page" href="./planos.html">Planos</a>
+          </li>
+          <li class="nav-item me-md-2">
+            <a class="nav-link" href="./contato.html">Contato</a>
+          </li>
+          <li class="nav-item me-md-2 position-relative">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#login" href="#">Login</a>
+          </li>
+          <a style="max-width: 115px;" href="./inscricao.html" class="btn btn-outline-primary">
+            Inscreva-se
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal LOGIN -->
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-content rounded-5 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h2 class="fw-bold mb-0">Sign up for free</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
+              <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+              <hr class="my-4">
+              <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+              <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+                <i class="fa-brands fa-twitter"></i> Sign up with Twitter
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <i class="fa-brands fa-facebook-f"></i> Sign up with Facebook
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#github"></use>
+                </svg>
+                <i class="fa-brands fa-github"></i> Sign up with GitHub
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <header>
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <p class="lead text-uppercase">O Melhor destino para sua viagem</p>
+        <h1 class="display-4 text-primary">Descubra Dublin</h1>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md px-1">
+          <img class="img-fluid mb-2" src="./assets/img/local/dublin/foto-7.jpg" alt="Foto 1">
+          <img class="img-fluid mb-2" src="./assets/img/local/dublin/foto-1.jpg" alt="Foto 2">
+        </div>
+        <div class="col-md px-1">
+          <img class="img-fluid mb-2" src="./assets/img/local/dublin/foto-2.jpg" alt="Foto 3">
+          <img class="img-fluid mb-2" src="./assets/img/local/dublin/foto-4.jpg" alt="Foto 4">
+          <img class="img-fluid mb-2" src="./assets/img/local/dublin/foto-6.jpg" alt="Foto 5">
+        </div>
+        <div class="col-md px-1">
+          <img class="img-fluid mb-2" src="./assets/img/local/dublin/foto-5.jpg" alt="Foto 6">
+          <img class="img-fluid mb-2" src="./assets/img/local/dublin/foto-3.jpg" alt="Foto 7">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <p class="lead text-uppercase">Descubra oque acontece na cidade</p>
+          <h1 class="display-4 text-primary">Próximos Eventos</h1>
+        </div>
+      </header>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Evento</th>
+            <th scope="col">Local</th>
+            <th scope="col">Ticket</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">23/10</th>
+            <td>Julien Baker</td>
+            <td>The Academy</td>
+            <td>
+              <button class="btn btn-outline-secondary btn-sm" type="submit">Comprar Ticket</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">23/10</th>
+            <td>Julien Baker</td>
+            <td>The Academy</td>
+            <td>
+              <button class="btn btn-outline-secondary btn-sm" type="submit">Comprar Ticket</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">23/10</th>
+            <td>Julien Baker</td>
+            <td>The Academy</td>
+            <td>
+              <button class="btn btn-outline-secondary btn-sm" type="submit">Comprar Ticket</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">23/10</th>
+            <td>Julien Baker</td>
+            <td>The Academy</td>
+            <td>
+              <button class="btn btn-outline-secondary btn-sm" type="submit">Comprar Ticket</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">23/10</th>
+            <td>Julien Baker</td>
+            <td>The Academy</td>
+            <td>
+              <button class="btn btn-outline-secondary btn-sm" type="submit">Comprar Ticket</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">23/10</th>
+            <td>Julien Baker</td>
+            <td>The Academy</td>
+            <td>
+              <button class="btn btn-outline-secondary btn-sm" type="submit">Comprar Ticket</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white">
+    <div class="container py-2 py-md-5">
+      <div class="row py-2 py-md-5">
+        <div class="col-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Paginas
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <a href="./planos.html" class="link">
+                Planos
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./contato.html" class="link">
+                Contato
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./inscricao.html" class="link">
+                Inscreva-se
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Locais
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <a href="./california.html" class="link">
+                California
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./paris.html" class="link">
+                Paris
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="./dublin.html" class="link">
+                Dublin
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Contato
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <p class="text-secondary m-0">
+                New York, Westbury | 2645 Gnatty Creek Road
+              </p>
+            </li>
+            <li class="my-1">
+              <p class="text-secondary m-0">
+                caravan@caravan.com.br
+              </p>
+            </li>
+            <li class="my-1">
+              <p class="text-secondary m-0">
+                21 99999-9999
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h4 class="text-uppercase small text-uppercase">
+            Redes Sociais
+          </h4>
+          <ul class="list-unstyled">
+            <li class="my-1">
+              <a href="#" style="max-width: 180px;" class="btn btn-outline-secondary d-block">
+                Facebook
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="#" style="max-width: 180px;" class="btn btn-outline-secondary d-block">
+                Twitter
+              </a>
+            </li>
+            <li class="my-1">
+              <a href="#" style="max-width: 180px;" class="btn btn-outline-secondary d-block">
+                Youtube
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3 text-white">
+      <p class="m-0">
+        Caravan &copy; 2020. Alguns direitos reservados.
+      </p>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="./assets/dependencies/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./assets/dependencies/popper/popper.min.js"></script>
+</body>
+
+</html>
